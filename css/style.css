@@ -1,0 +1,388 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
+	flex-direction: row-reverse;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+/*Estilos Maso 1*/
+.card_maso_1 {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 0.7s;
+	width: 10.3vw;
+	height: 7.9vw;
+	min-width: 90px;
+	min-height: 65px;
+}
+
+/*Estilos de tiradas*/
+.container_completo_maso_1 {
+	position: relative;
+	display: grid;
+	column-gap: 2vw;
+	row-gap: 1.5%;
+	grid-template-columns: repeat(10, 7.6vw);
+	grid-template-rows: repeat(7, 11vh);
+	width: 99vw;
+	height: 90vh;
+	margin-top: 1%;
+	margin-left: 1vw;
+}
+.container_tirada_1_maso_1 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 30vw);
+	grid-template-rows: repeat(2, 25vw);
+	margin-left: 50vw;
+	margin-top: 30vh;
+	grid-gap: 2vw;
+}
+.maso_1_tirada_1 {
+	width: 23.5vw;
+	height: 18vw;
+}
+.container_tirada_2_maso_1 {
+	position: relative;
+	display: grid;
+	row-gap: 1vw;
+	grid-template-columns: repeat(3, 23vw);
+	grid-template-rows: repeat(2, 28vh);
+	margin-right: 15vw;
+	margin-top: 2vw;
+}
+.maso_1_tirada_2 {
+	width: 18vw;
+	height: 14vw;
+}
+
+.agrandar_maso_1 {
+	position: absolute;
+	margin-left: 19.67vw;
+	width: 54vw;
+	height: 45vw;
+	z-index: 200;
+	transform: rotateY(180deg);
+}
+
+/*Estilos Maso 2*/
+
+.container_completo_maso_2 {
+	position: relative;
+	display: grid;
+	column-gap: 1vw;
+	grid-template-columns: repeat(16, 5vw);
+	grid-template-rows: repeat(5, 18vh);
+	width: 99vw;
+	height: 90vh;
+	margin-top: 3vh;
+	margin-left: 1vw;
+}
+.container_completo_maso_3 {
+	position: relative;
+	display: grid;
+	column-gap: 1vw;
+	grid-template-columns: repeat(5, 20vw);
+	grid-template-rows: repeat(4, 21vh);
+	width: 99vw;
+	height: 90vh;
+	margin-top: 3vh;
+	margin-left: 1vw;
+}
+
+.container_tirada_1_maso_2 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 23vw);
+	grid-template-rows: repeat(2, 49vh);
+	margin-right: 3vw;
+	margin-top: 2vw;
+}
+.container_tirada_1_maso_3 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 32vw);
+	margin-top: 10vw;
+}
+
+.container_tirada_2_maso_2 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 23vw);
+	grid-template-rows: repeat(2, 49vh);
+	margin-right: 20vw;
+	margin-top: 2vw;
+}
+.container_tirada_2_maso_3 {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 30vw);
+	margin-right: 2vw;
+	margin-top: 2vw;
+}
+/*-------------Clases correspondietes a la construcción de las cartas*/
+
+.card_maso_2 {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 0.7s;
+	width: 83px;
+	height: 119px;
+	z-index: 2;
+}
+.card_maso_3 {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 0.7s;
+	width: 10vw;
+	height: 10vw;
+	min-width: 65px;
+	min-height: 65px;
+}
+
+.maso_2_tirada_1,
+.maso_2_tirada_2 {
+	width: 14vw;
+	height: 20vw;
+}
+
+.maso_3_tirada_1,
+.maso_3_tirada_2 {
+	width: 22vw;
+	height: 22vw;
+}
+@media screen and (min-width: 915px) and (max-width: 1115px) {
+	.container_completo_maso_1 {
+		grid-template-columns: repeat(10, 7.5vw);
+		grid-template-rows: repeat(6, 11.5vh);
+	}
+	.container_completo_maso_2 {
+		grid-template-columns: repeat(16, 5vw);
+		grid-template-rows: repeat(6, 8.7vw);
+	}
+	.maso_1_tirada_1,
+	.maso_1_tirada_2,
+	.maso_1_tirada_3 {
+		width: 22vw;
+		height: 17vw;
+	}
+	.maso_2_tirada_1,
+	.maso_2_tirada_2,
+	.maso_2_tirada_3 {
+		width: 14vw;
+		height: 20vw;
+	}
+}
+@media screen and (min-width: 741px) and (max-width: 914px) {
+	.container_completo_maso_1 {
+		grid-template-columns: repeat(10, 7.4vw);
+		grid-template-rows: repeat(6, 12vh);
+	}
+	.container_completo_maso_2 {
+		grid-template-columns: repeat(13, 6.3vw);
+		grid-template-rows: repeat(7, 8.85vw);
+	}
+	.maso_1_tirada_1,
+	.maso_1_tirada_2,
+	.maso_1_tirada_3 {
+		width: 23vw;
+		height: 18vw;
+	}
+	.maso_2_tirada_1,
+	.maso_2_tirada_2,
+	.maso_2_tirada_3 {
+		width: 14vw;
+		height: 20vw;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 741px) {
+	.container_completo_maso_1 {
+		grid-template-columns: repeat(8, 10vw);
+		grid-template-rows: repeat(8, 9vh);
+	}
+	.container_completo_maso_2 {
+		grid-template-columns: repeat(10, 8.3vw);
+		grid-template-rows: repeat(8, 9.2vw);
+	}
+}
+@media screen and (max-width: 500px) {
+	.container_completo_maso_1 {
+		grid-template-columns: repeat(5, 17.2vw);
+		grid-template-rows: repeat(13, 5.5vh);
+	}
+	.container_completo_maso_2 {
+		grid-template-columns: repeat(7, 11.3vw);
+		grid-template-rows: repeat(11, 9.2vw);
+	}
+}
+.girado {
+	transform: rotateY(180deg);
+}
+
+.card__front {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background-image: var(--img);
+	backface-visibility: hidden;
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+.baner {
+	width: 100%;
+	height: 11%;
+	background-color: black;
+	transition: all 1s;
+	border-radius: 0% 0% 15px 15px;
+}
+.baner:hover {
+	opacity: 0;
+}
+.card__back {
+	position: absolute;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-image: var(--img);
+	background-size: cover;
+	padding-top: 15%;
+	padding-left: 15%;
+}
+.card_back:hover {
+	transform: scale(2);
+}
+
+.agrandar_maso_2 {
+	position: absolute;
+	margin-left: 33vw;
+	width: 31vw;
+	height: 46vw;
+	z-index: 200;
+	transform: rotateY(180deg);
+}
+.agrandar_maso_3 {
+	position: absolute;
+	margin-left: 28vw;
+	width: 46vw;
+	height: 44vw;
+	z-index: 200;
+	transform: rotateY(180deg);
+}
+.menu {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	height: 75vh;
+	border-radius: 20px 20px 0px 20px;
+	transition: all 1s;
+	transform: rotateZ(-90deg) translateY(58%);
+	padding: 4px;
+	z-index: 500;
+}
+.menu:hover {
+	transform: rotateZ(0deg) translateY(5%);
+}
+
+.menu button {
+	margin-top: 15px;
+}
+.selected {
+	box-shadow: 3px 3px 5px rgb(17, 204, 211), -3px -3px 5px rgb(54, 32, 180);
+}
+.boton_maso_1 {
+	box-sizing: border-box;
+	width: 70px;
+	height: 70px;
+	background-image: url(../img/maso_1.png);
+	background-size: cover;
+	z-index: 800;
+	transition: all 1s;
+	border-radius: 50%;
+}
+.boton_maso_1:hover {
+	transform: scale(1.3);
+}
+
+.boton_maso_2 {
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/maso_2.png);
+	background-size: cover;
+	z-index: 800;
+	margin-top: 10px;
+	transition: all 1s;
+	border-radius: 50%;
+}
+.boton_maso_2:hover {
+	transform: scale(1.3);
+}
+.boton_maso_3 {
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/maso_3.png);
+	background-size: cover;
+	z-index: 800;
+	margin-top: 10px;
+	transition: all 1s;
+	border-radius: 50%;
+}
+.boton_maso_3:hover {
+	transform: scale(1.3);
+}
+.girar {
+	box-sizing: border-box;
+	width: 65px;
+	height: 65px;
+	background-image: url(../img/girar.png);
+	background-size: cover;
+	margin-top: 10px;
+	z-index: 800;
+	transition: all 2s;
+}
+.girar:hover {
+	transform: rotateZ(-360deg);
+}
+.input {
+	width: 25vw;
+}
+.content_tirada1 {
+	visibility: hidden;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(3, 23vw);
+	height: 4vh;
+	margin-right: 7.6vw;
+	margin-top: 25vh;
+	grid-gap: 9vw;
+}
+.content_tirada2 {
+	visibility: hidden;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(3, 23vw);
+	height: 2vh;
+}
+.content_tirada1_visible {
+	visibility: visible;
+}
+.content_tirada2_visible {
+	visibility: visible;
+}
